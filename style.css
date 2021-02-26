@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- GENERAL STYLING --------- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+} 
+
+.fab, .fas {
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+
+/* ------------ VIDEO HEADER STYLING ----------- */
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,1);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+/* MAIN NAVIGATION MENU AND CONTENT STYLING */
+.main-navigation {
+    z-index: 4;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    /* background: rgba(24, 23, 0, 0.8); */
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    height: 5em;
+    margin: 0 auto;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    font-weight: 400;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    font-size: 1em;
+}
+
+.nav-items a:hover {
+    z-index: 20;
+    cursor: pointer;
+    color: #888;
+}
+
+.icons {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img {
+    width: 28px;
+    height: 28px;
+}
+
+/* MAIN SECTION STYLING */
+#home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+#home .arrow {
+    width: 32px;
+    position: absolute;
+    bottom: 32px;
+}
+
+.main-section-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.main-section-div img {
+    width: 480px;
+}
+
+.main-heading {
+    z-index: 3;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    animation: fadein 1s;
+    text-shadow: 2px 2px 9px #000000;
+}
+
+.tagline {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 32px;
+    font-size: 1.5rem;
+}
+
+.line {
+    width: 0;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    animation: line forwards ease 1s;
+}
+
+.main-btn {
+    background-color: #3B4FF0;
+    padding: 8px 48px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 24px;
+}
+
+.main-btn:hover {
+    background-color: #fff;
+    color: #3B4FF0;
+    border: 1px solid #3B4FF0;
+}
+
+/* David's grow section */
+
+
+.hr1{
+    width: 0;
+    height: 1px;
+    background-color: gray;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    animation: line forwards ease 1s;
+    margin-top: 50px;
+}
+
+.what_is_grow{
+    text-align: center;
+    font-size: 50px;
+    margin-left: 25%;
+    font-weight: bold;
+    opacity: 80%;
+    
+}
+/* Maybe here we can us JS when this text is appear */
+.grow_text{
+    text-align: left;
+    margin: 20px;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 25%;
+    color: gray;
+}
+
+
+
+.hr2{
+    width: 0;
+    height: 1px;
+    background-color: gray;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    animation: line forwards ease 1s;
+    float: right;
+    margin-bottom: 50px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.main-heading span {
+    color: #3B4FF0;
+    font-weight: 800;
+}
+
+
+/* KEYFRAMES */
+@keyframes line {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 46%;
+    }
+}
